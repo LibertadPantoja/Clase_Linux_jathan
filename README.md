@@ -95,7 +95,24 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
   
   less proc/cpuinfo
   
+  # Comandos básicos y configurar repositorios en Debian
   
+  Se entra primero como su
+  
+  ## man
+  Manual, con el podemos ver información de un paquete, ejemplo para cosas de instalación
+  
+  man apt-get 
+  
+  dd borrar una línea completa en vi, 
+  
+  para entrar al modo de edición usar Insert
+  
+  shift :q! cierra sin guardar :D
+  
+  Siempre respaldar los archivos de configuración. Ejemplo:
+  
+  cp etc/apt/sources.list etc/apt/sources.list_original
   
   Ctrl -p y Ctrl -n ayuda a desplazarse en el historial
   
