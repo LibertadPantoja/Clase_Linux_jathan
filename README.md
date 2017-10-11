@@ -87,7 +87,15 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
   
   ### En root 
   
-  Está el home del superusuario
+  Está el home del superusuario. Sólo se recomienda para tareas muy específicas. 
+  
+  ### En proc
+  
+  Todo lo relacionado a sistemas de archivos. Ejemplo:
+  
+  less proc/cpuinfo
+  
+  
   
   Ctrl -p y Ctrl -n ayuda a desplazarse en el historial
   
