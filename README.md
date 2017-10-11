@@ -44,7 +44,50 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
  ### En lib
  
  Están las bibliotecas. Prestas un recurso que es regresado.
+ 
+ ### En media
+ 
+ Puntos de montaje de cosas extraíbles que ya reconoce el sistema previamente (montado con sesión gráfica).
+ 
+ ### En mnt
+ 
+ Punto de montaje para sistemas de archivos temporalemnte montados
+ 
+ ### En opt
+ 
+ Paquetes adicionales que nostros instalamos
+ 
+ ### En sbin
+ 
+ Archivos especiales del sistema sóloe ejecutados por el superusuario. No existen para el suusario sin privilegios.
+ 
+ ### En srv
+ 
   Ctrl - shift t nuevo tab en terminal
+  
+  ### En tmp
+  
+  Se guardan los qrchivos temporales mientras la sesión esté activa.
+  
+  ### En usr
+  
+  Aplicaciones y librerías para diferentes usuarios (who,whoami)
+  
+  #### En local
+  
+  Cosas particulares de cada usuario, no se usa mucho en Debian
+  
+  ### En var
+  
+  Archivos variables (paquetes instalados en debian). 
+  
+  ´´´
+  ls -la /var/cache/apt/archives
+  ´´´
+  
+  ### En root 
+  
+  Está el home del superusuario
   
   Ctrl -p y Ctrl -n ayuda a desplazarse en el historial
   
