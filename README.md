@@ -2,34 +2,34 @@
 Apuntes de la clase de Debian: **Debian 9 stretch**
 
 
-# Ambientes gráficos
+# Table of contents
+1. [Jerarquía de directorios](#directorios)
+	1. [bin](#bin)
+	2. [boot](#boot)
+	3. [dev](#dev)
+2. [Comandos básicos y configurar repositorios en Debian](#com)
+3. [vi](#vi)
+4. [Shortcuts en terminal y algunos comandos](#terminal)
+5. [Ambientes gráficos](#ambientes)
 
-## GNOME shell
 
-Intefaz gráfica muy completa
-
-### Tweak para costumizar: gnome-look.org
-
-- En Tweak Se pueden obtener formas de ver los escritorios, se pueden modificar las áreas de trabajo, hacerse estáticas y determinar el número de ellas. 
-
-En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a la máquina virtual.
-
-## Jeraquía de directorios en New Linux
+## Jeraquía de directorios en New Linux <a name="directorios"></a>
 
 	Todo para new Linux son archivos
   
+  ### En bin <a name="bin"></a>
   
-  Super ususario debian es su
+  Hay binarios escenciales para correr comandos
   
-  ### En el directorio bin hay binarios escenciale spara correr comandos
+  ### En boot <a name="boot"></a>
   
-  ### En boot todo lo relacionado al sector de arranque
+  Todo lo relacionado al sector de arranque
   
   ```
   cd /
   ls -la boot/
   ```
-  ### En dev
+  ### En dev <a name="dev"></a>
   
   Archivos del dispositivo
   
@@ -95,47 +95,68 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
   
   less proc/cpuinfo
   
-  # Comandos básicos y configurar repositorios en Debian
+  ## Comandos básicos y configurar repositorios en Debian <a name="com"></a>
+  
+  Super ususario debian es su
   
   Se entra primero como su
   
-  ## man
+  ### man
   Manual, con el podemos ver información de un paquete, ejemplo para cosas de instalación
   
-  man apt-get 
-  
-  dd borrar una línea completa en vi en modo de entrada (escape)
-  para entrar al modo de edición usar Insert
-  
-  para guardar
-  shift zz
-  : w
-  : wq
-  : x
-  
-  en modo de entrada
-  o línea nueva
-  gg ir hasta arriba
-  
-  update sgeuido de upgrade, hacerlo de preferencia al menos una vez a la semana :D
+  ```
+man apt-get 
+  ```
   
   
-  shift :q! cierra sin guardar :D
+  Correr update seguido de upgrade, de preferencia al menos una vez a la semana :D
   
   Siempre respaldar los archivos de configuración. Ejemplo:
   
+  ```
   cp etc/apt/sources.list etc/apt/sources.list_original
+  
+  ```
+  
+  ## vi <a name="vi"></a>
+  
+  * dd borrar una línea completa en vi en modo de entrada (escape)
+  * Para entrar al modo de edición usar Insert
+  * Para acceder al modo entrada presionar Esc
+  * Para guardar:
+  	* shift zz
+  	* : w  Sólo escribir (guardar cambios)
+  	* : wq Escribir y salir
+  	* : x Guardar y salir
+  * o crea una línea nueva en modo entrada (Esc)
+  * gg Shortcut para ir hasta arriba en modo entrada (Esc)
+  
+  ## Shortcuts en terminal y algunos comandos <a name="terminal"></a>
   
   Ctrl -p y Ctrl -n ayuda a desplazarse en el historial
   
-  Ctrl -a inicio de la orden en terminal
+  Ctrl -a manda el cursor al inicio de la líne en la que estás escribiendo en la terminal
   
-  aptittuve vs ap-get
+  Shift repag/avpag para moverse en la terminal (scroll)
   
-  aptitude quita las dependencias que no usamos
-  
-  shift repag/Av pag para avanzar en la terminal
-  Ctrl -e ir al finald e la línea
+  Ctrl -e lleva el cursor al final de la línea en la que estás escribiendo en la terminal
 
- Ctrl - r busca comandos en el historial por filtro
-less ver contenido de archivos
+  Ctrl - r busca comandos en el historial por filtro
+
+  less ver contenido de archivos
+
+## Ambientes gráficos <a name="ambientes"></a>
+
+### GNOME shell
+
+Intefaz gráfica muy completa
+
+#### Tweak para costumizar: gnome-look.org
+
+- En Tweak Se pueden obtener formas de ver los escritorios, se pueden modificar las áreas de trabajo, hacerse estáticas y determinar el número de ellas. 
+
+![tweak](tweak.png)
+
+En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a la máquina virtual.
+
+## Light 
