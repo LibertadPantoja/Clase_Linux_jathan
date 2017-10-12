@@ -7,6 +7,18 @@ Apuntes de la clase de Debian: **Debian 9 stretch**
 	1. [bin](#bin)
 	2. [boot](#boot)
 	3. [dev](#dev)
+	4. [etc](#etc)
+	5. [home](#home)
+	6. [lib](#lib)
+	7. [media](#media)
+	8. [mnt](#mnt)
+	9. [opt](#opt)
+	10. [sbin](#sbin)
+	11. [srv](#srv)
+	12. [tmp](#tmp)
+	13. [usr](#usr)
+	14. [local](#local)
+	15. [var](#var)
 2. [Comandos básicos y configurar repositorios en Debian](#com)
 3. [vi](#vi)
 4. [Shortcuts en terminal y algunos comandos](#terminal)
@@ -33,51 +45,51 @@ Apuntes de la clase de Debian: **Debian 9 stretch**
   
   Archivos del dispositivo
   
-  ### En etc
+  ### En etc <a name="etc"></a>
   
  archivos host, configuración del sistema
  
- ### En home
+ ### En home <a name="home"></a>
  
  Se guardan los archivos de los usuarios (aquí s ecrean los directorios personales)
  
- ### En lib
+ ### En lib <a name="lib"></a>
  
  Están las bibliotecas. Prestas un recurso que es regresado.
  
- ### En media
+ ### En media <a name="media"></a>
  
  Puntos de montaje de cosas extraíbles que ya reconoce el sistema previamente (montado con sesión gráfica).
  
- ### En mnt
+ ### En mnt <a name="mnt"></a>
  
  Punto de montaje para sistemas de archivos temporalemnte montados
  
- ### En opt
+ ### En opt <a name="opt"></a>
  
  Paquetes adicionales que nostros instalamos
  
- ### En sbin
+ ### En sbin <a name="sbin"></a>
  
  Archivos especiales del sistema sóloe ejecutados por el superusuario. No existen para el suusario sin privilegios.
  
- ### En srv
+ ### En srv <a name="srv"></a>
  
   Ctrl - shift t nuevo tab en terminal
   
-  ### En tmp
+  ### En tmp <a name="tmp"></a>
   
   Se guardan los qrchivos temporales mientras la sesión esté activa.
   
-  ### En usr
+  ### En usr <a name="usr"></a>
   
   Aplicaciones y librerías para diferentes usuarios (who,whoami)
   
-  #### En local
+  #### En local <a name="local"></a>
   
   Cosas particulares de cada usuario, no se usa mucho en Debian
   
-  ### En var
+  ### En var <a name="var"></a>
   
   Archivos variables (paquetes instalados en debian). 
   
@@ -117,9 +129,10 @@ man apt-get
   cp etc/apt/sources.list etc/apt/sources.list_original
   
   ```
-  
-  ## vi <a name="vi"></a>
-  
+## vi <a name="vi"></a>
+
+vi y vim (vi mejoado) son editores de texto para la terminal que funcionan con comandos (modo de entrada) y con edición directa.
+
   * dd borrar una línea completa en vi en modo de entrada (escape)
   * Para entrar al modo de edición usar Insert
   * Para acceder al modo entrada presionar Esc
