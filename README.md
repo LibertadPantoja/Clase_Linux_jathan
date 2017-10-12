@@ -104,9 +104,21 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
   
   man apt-get 
   
-  dd borrar una línea completa en vi, 
-  
+  dd borrar una línea completa en vi en modo de entrada (escape)
   para entrar al modo de edición usar Insert
+  
+  para guardar
+  shift zz
+  : w
+  : wq
+  : x
+  
+  en modo de entrada
+  o línea nueva
+  gg ir hasta arriba
+  
+  update sgeuido de upgrade, hacerlo de preferencia al menos una vez a la semana :D
+  
   
   shift :q! cierra sin guardar :D
   
@@ -118,6 +130,12 @@ En el menú **Máquina virtual** se pueden redirigir los dispositivos montados a
   
   Ctrl -a inicio de la orden en terminal
   
-  Ctrl -e ir al finald e la lí
-  nea
-  less ver contenido de archivos
+  aptittuve vs ap-get
+  
+  aptitude quita las dependencias que no usamos
+  
+  shift repag/Av pag para avanzar en la terminal
+  Ctrl -e ir al finald e la línea
+
+ Ctrl - r busca comandos en el historial por filtro
+less ver contenido de archivos
