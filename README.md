@@ -93,9 +93,9 @@ Apuntes de la clase de Debian: **Debian 9 stretch**
   
   Archivos variables (paquetes instalados en debian). 
   
-  ´´´
-  ls -la /var/cache/apt/archives
-  ´´´
+ ```
+ ls -la /var/cache/apt/archives
+ ```
   
   ### En root 
   
@@ -116,18 +116,17 @@ Apuntes de la clase de Debian: **Debian 9 stretch**
   ### man
   Manual, con el podemos ver información de un paquete, ejemplo para cosas de instalación
   
-  ```
+```
 man apt-get 
-  ```
+```
   
   
   Correr update seguido de upgrade, de preferencia al menos una vez a la semana :D
   
   Siempre respaldar los archivos de configuración. Ejemplo:
   
-  ```
+  ```
   cp etc/apt/sources.list etc/apt/sources.list_original
-  
   ```
 ## vi <a name="vi"></a>
 
