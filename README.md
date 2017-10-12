@@ -125,9 +125,9 @@ man apt-get
   
   Siempre respaldar los archivos de configuración. Ejemplo:
   
-  ```
-  cp etc/apt/sources.list etc/apt/sources.list_original
-  ```
+```
+cp etc/apt/sources.list etc/apt/sources.list_original
+```
 ## vi <a name="vi"></a>
 
 vi y vim (vi mejoado) son editores de texto para la terminal que funcionan con comandos (modo de entrada) y con edición directa.
